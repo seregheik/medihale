@@ -20,28 +20,35 @@
             <div class="container">
                 <a class="navbar-brand" href="/"><img src="/img/logo/logo.png" alt="" srcset=""><span
                         class="px-3 text-primary">Medihale Consult</span></a>
-                <span class="navbar-toggler navbar-toggler-icon" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"></span>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav text-primary align-items-center">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/"><img src="/img/animations/home.gif"
-                                    alt="" width="30" srcset="">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/products-and-services">Products and Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/download">Download</a>
-                        </li>
-                    </ul>
+                <span class="navbar-toggler navbar-toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample"
+                    role="button" aria-label="Toggle navigation"></span>
+                <div class="offcanvas offcanvas-top bg-body-tertiary" tabindex="-1" data-bs-scroll="false"
+                    id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="navbar-collapse justify-content-end" id="navbarNa">
+                        <div class="d-flex p-3 justify-content-end">
+                            <span type="button" class="btn-close d-block d-lg-none" data-bs-dismiss="offcanvas" aria-label="Close"></span>
+                        </div>
+                        <ul class="navbar-nav text-primary align-items-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="/"><img
+                                        src="/img/animations/home.gif" alt="" width="30" srcset="">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/about">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/products-and-services">Products and Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/download">Download</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -49,33 +56,34 @@
         <section>
 
         </section>
-    </main>
-    <section id="calltoaction" class="bg-primary mt-3 d-flex py-5 align-items-center">
-        <!-- <img src="/img/image/texture.jpg" class="ctaimg" alt=+""> -->
-        <div class="container ctaimg">
-            <div class="row">
-                <div class="col-12 col-lg-8">
-                    <div class="h4 text-center text-light">
-                        Join thousands of users who use and love MediHale. Download the
-                        app today!
+        <section id="calltoaction" class="bg-primary mt-3 d-flex py-5 align-items-center">
+            <!-- <img src="/img/image/texture.jpg" class="ctaimg" alt=+""> -->
+            <div class="container ctaimg">
+                <div class="row">
+                    <div class="col-12 col-lg-8">
+                        <div class="h4 text-center text-light">
+                            Join thousands of users who use and love MediHale. Download the
+                            app today!
+                        </div>
                     </div>
-                </div>
-                <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center text-center">
-                    <div class="px-3">
-                        <a href="#" class="btn btn-light text-primary text-capitalize"><img
-                                src="/img/icons/android.png" width="20" alt="Playstore" srcset="" /><span
-                                class="px-2 text-capitalize">playstore</span></a>
-                    </div>
-                    <div class="px-3">
-                        <a href="#" class="btn btn-light text-primary text-capitalize"><img
-                                src="/img/icons/apple.png" width="20" alt="Appstore" srcset="" /><span
-                                class="px-2">appstore</span></a>
+                    <div class="col-12 col-lg-4 d-flex justify-content-center align-items-center text-center">
+                        <div class="px-3">
+                            <a href="#" class="btn btn-light text-primary text-capitalize"><img
+                                    src="/img/icons/android.png" width="20" alt="Playstore" srcset="" /><span
+                                    class="px-2 text-capitalize">playstore</span></a>
+                        </div>
+                        <div class="px-3">
+                            <a href="#" class="btn btn-light text-primary text-capitalize"><img
+                                    src="/img/icons/apple.png" width="20" alt="Appstore" srcset="" /><span
+                                    class="px-2">appstore</span></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="footer" class="py-5 text-light">
+        </section>
+    </main>
+
+    <footer id="footer" class="text-light py-5">
         <div class="container pb-3">
             <div class="row text-start justify-content-between">
                 <div class="col-12 py-3 col-md-2">
@@ -162,8 +170,7 @@
                         target="_blank">
                         <i class="bi bi-linkedin"></i>
                     </a>
-                    <a href="#"
-                        class="link-underline link-light link-opacity-75-hover fs-4 link-underline-opacity-0"
+                    <a href="#" class="link-underline link-light link-opacity-75-hover fs-4 link-underline-opacity-0"
                         target="_blank">
                         <i class="bi bi-facebook"></i>
                     </a>
@@ -187,7 +194,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/jquery.min.js"></script>
     <script>
