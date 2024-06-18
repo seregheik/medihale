@@ -88,9 +88,6 @@ body {
     border: 2px solid #fff;
 }
 
-#shop {
-    height: 35rem;
-}
 .contain {
     height: inherit;
     width: inherit;
@@ -119,9 +116,9 @@ body {
     min-height: 7.5rem;
 }
 
-.bg-light {
+/* .bg-light {
     background: #f7f1f7 !important;
-}
+} */
 .bg-darker {
     background: #442244 !important;
 }
@@ -235,4 +232,18 @@ body {
     --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
     --bs-offcanvas-transition: transform 0.3s ease-in-out;
     --bs-offcanvas-title-line-height: 1.5;
+}
+.fs-7 {
+    font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+    .col-md-6-modified {
+        width: 47%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-lg-3-modified {
+        width: 23%;
+    }
 }
