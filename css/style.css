@@ -247,3 +247,14 @@ body {
         width: 23%;
     }
 }
+
+.d-max-width{
+    max-width:  170px;
+}
+.pale-purple-bg {
+    background-color: #FBEDFD
+}
+.pr-0 {
+    padding-right: 0;
+    padding-left: 0;
+}
