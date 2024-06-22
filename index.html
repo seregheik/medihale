@@ -9,25 +9,36 @@
   <link rel="stylesheet" href="/css/bootstrap.css" />
   <link rel="stylesheet" href="/css/bootstrap.css.map" />
   <link rel="stylesheet" href="/css/style.css" />
+  <style>
+    @media (max-width: 992px) {
+        .offcanvas {
+          background-image: linear-gradient(90deg, #AB55AC, #AB55AC);
+          background-color: #ad5389;
+    }
+    }
+</style>
 </head>
 
 <body>
   <div class="preloader">
     <div class="loader"></div>
   </div>
-  <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg bg-nav">
+
+  <header class="sticky-top bg-nav ">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container">
         <a class="navbar-brand" href="/"><img src="/img/logo/logo.png" alt="" class="img-fluid brightness" srcset="" /><span
             class="px-3 text-light">Medihale Consult</span></a>
         <span class="navbar-toggler brightness navbar-toggler-icon" data-bs-toggle="offcanvas" href="#offcanvasExample"
           role="button" aria-label="Toggle navigation"></span>
-        <div class="offcanvas offcanvas-top bg-body-tertiary" tabindex="-1" data-bs-scroll="false" id="offcanvasExample"
+        <div class="offcanvas  offcanvas-top bg-body-tertiary" tabindex="-1" data-bs-scroll="false" id="offcanvasExample"
           aria-labelledby="offcanvasExampleLabel">
-          <div class="navbar-collapse bg-nav justify-content-end align-items-center" id="navbarNa">
+          <div class="navbar-collapse  justify-content-end align-items-center" id="navbarNa">
             <div class="d-flex p-3 justify-content-end">
-              <span type="button" class="btn-close d-block d-lg-none" data-bs-dismiss="offcanvas"
+              <div class="brightness">
+              <span type="button" class="btn-close brightness d-block d-lg-none" data-bs-dismiss="offcanvas"
                 aria-label="Close"></span>
+              </div>
             </div>
             <ul class="navbar-nav text-primary align-items-center">
               <li class="nav-item">
