@@ -135,8 +135,8 @@ body {
 }
 .bgg {
   background-color: #ab55ac;
-  opacity: 1;
-  background-image: radial-gradient(circle at center center, #ffffff, #ab55ac),
+  /* opacity: 1; */
+  /* background-image: radial-gradient(circle at center center, #ffffff, #ab55ac),
     repeating-radial-gradient(
       circle at center center,
       #ffffff,
@@ -145,7 +145,7 @@ body {
       transparent 8px,
       transparent 4px
     );
-  background-blend-mode: darken;
+  background-blend-mode: darken; */
 }
 .bgg-nav {
   background: #ab55ac;
@@ -303,6 +303,9 @@ body {
 }
 .brightness {
   filter: brightness(1000%) !important;
+}
+.darkness {
+  filter: brightness(-1000%) !important;
 }
 .text-green {
   color: #093028;
