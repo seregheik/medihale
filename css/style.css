@@ -91,13 +91,32 @@ body {
     0 calc(50% + var(--s)),
     var(--s) 50%,
     0 calc(50% - var(--s))
-    );
+  );
 }
 @keyframes s9 {
   100% {
     transform: rotate(1turn);
   }
 }
+
+.accordion-item {
+  border: 2px solid #f5f5f8;
+  background-color: #fff !important;
+  border-radius: 10px !important;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: #fff;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
   color: #ab55ac;
@@ -290,4 +309,10 @@ body {
 }
 .hue-green {
   filter: hue-rotate(216deg);
+}
+.border-purple {
+  border: 1.5px solid #ab55ac;
+}
+.bg-purple-light {
+  background-color: #ab55ac09;
 }
