@@ -61,8 +61,6 @@ body {
   );
 }
 .loader-green {
-  border: 3px solid #f3f3f3;
-  border-top: 16px solid #31572c;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -70,10 +68,30 @@ body {
   right: 0;
   margin: auto;
   z-index: 3;
-  border-radius: 70%;
   width: 120px;
   height: 120px;
-  animation: spin 0.8s linear infinite;
+  --s: 30px;
+  background: #31572c;
+  border-radius: 50%;
+  animation: s9 2s infinite linear;
+  clip-path: polygon(
+    0 0,
+    calc(50% - var(--s)) 0,
+    50% var(--s),
+    calc(50% + var(--s)) 0,
+    100% 0,
+    100% calc(50% - var(--s)),
+    calc(100% - var(--s)) 50%,
+    100% calc(50% + var(--s)),
+    100% 100%,
+    calc(50% + var(--s)) 100%,
+    50% calc(100% - var(--s)),
+    calc(50% - var(--s)) 100%,
+    0 100%,
+    0 calc(50% + var(--s)),
+    var(--s) 50%,
+    0 calc(50% - var(--s))
+    );
 }
 @keyframes s9 {
   100% {
@@ -97,24 +115,27 @@ body {
   z-index: 2;
 }
 .bgg {
-    background-color: #AB55AC;
-opacity: 1;
-background-image: radial-gradient(circle at center center, #ffffff, #AB55AC), repeating-radial-gradient(circle at center center, #ffffff, #ffffff, 4px, transparent 8px, transparent 4px);
-background-blend-mode: multiply;
+  background-color: #ab55ac;
+  opacity: 1;
+  background-image: radial-gradient(circle at center center, #ffffff, #ab55ac),
+    repeating-radial-gradient(
+      circle at center center,
+      #ffffff,
+      #ffffff,
+      4px,
+      transparent 8px,
+      transparent 4px
+    );
+  background-blend-mode: darken;
 }
 .bgg-nav {
-    background: rgb(118,32,120);
-    background: -moz-linear-gradient(90deg, rgba(118,32,120,1) 0%, rgba(154,68,155,1) 40%, rgba(154,68,155,1) 50%, rgba(154,68,155,1) 60%, rgba(118,32,120,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(118,32,120,1) 0%, rgba(154,68,155,1) 40%, rgba(154,68,155,1) 50%, rgba(154,68,155,1) 60%, rgba(118,32,120,1) 100%);
-    background: linear-gradient(90deg, rgba(118,32,120,1) 0%, rgba(154,68,155,1) 40%, rgba(154,68,155,1) 50%, rgba(154,68,155,1) 60%, rgba(118,32,120,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#762078",endColorstr="#762078",GradientType=1);
+  background: #ab55ac;
+}
+.index-1 {
+  z-index: 1;
 }
 #hero {
   height: 35rem;
-  /* background-color: #ab55ac; */
-  /* opacity: 1;
-  background-image: radial-gradient(#ffffff6e 2px, #ab55ac 2px);
-  background-size: 40px 40px; */
 }
 .bg-nav {
   background-color: #ab55ac00;
