@@ -1,3 +1,4 @@
 {
-    "terminal.integrated.mouseWheelZoom": true
+    "terminal.integrated.mouseWheelZoom": true,
+    "liveServer.settings.port": 5502
 }
